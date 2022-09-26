@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      database: product
+      port: 27017
+      host: localhost
+  application:
+    name: product-service
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+server:
+  port: 8081

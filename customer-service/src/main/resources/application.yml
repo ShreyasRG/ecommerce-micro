@@ -1,0 +1,24 @@
+
+spring:
+  application:
+    name: customer-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/customer
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql : true
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+productGetUrl: http://localhost:8081/products?productId=
+cartAddUrl: http://localhost:8082/carts
+cartUpdateUrl: http://localhost:8082/carts
+cartGetUrl: http://localhost:8082/carts?customerId=
